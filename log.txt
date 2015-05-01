@@ -1,0 +1,11 @@
+Start: Thu, 30 Apr 2015 17:00:00 -0700
+End: Thu, 30 Apr 2015 17:06:52 -0700
+Tasks: starting homework; created initial multtable.php
+
+Start: Thu, 30 Apr 2015 17:06:53 -0700
+End: Thu, 30 Apr 2015 17:55:16 -0700
+Tasks: multtable checks for parameters correctly
+
+Start: Thu, 30 Apr 2015 17:55:17 -0700
+End: Thu, 30 Apr 2015 18:16:50 -0700
+Tasks: multtable finished
