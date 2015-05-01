@@ -67,4 +67,36 @@ if ($checkContents) {
         $displayTable = false;
     }
 }
+
+if ($displayTable) {
+    $numRows = $_GET['max-multiplicand'] - $_GET['min-multiplicand'] + 2;
+    $numCols = $_GET['max-multiplier'] - $_GET['min-multiplier'] + 2;
+
+    echo '<table>';
+    for ($i = 0; $i < $numRows; $i++) {
+        echo '<tr>';
+        // first row is multiplier headers
+        if ($i == 0) {
+            echo '<td></td>';
+            for ($j = 1; $j < $numCols; $j++) {
+                echo '<td>';
+                echo $_GET['min-multiplier'] + $j - 1;
+                echo '</td>';
+            }
+        }
+        
+        echo '<tr>';
+        // first column is multiplicand headers
+        echo '<td>';
+        echo $_GET['min-multiplicand'] + $i;
+        echo '</td>';
+        for ($j = 1; $j < $numCols; $j++) {
+            echo '<td>';
+            echo ($_GET['min-multiplier'] + $j - 1) * ($_GET['min-multiplicand'] + $i);
+            echo '</td>';
+        }
+        echo '</tr>';
+    }
+    echo '</table>';
+}
 ?>
